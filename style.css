@@ -1,0 +1,24 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
+  text-align: center;
+  font-size: xx-large;
+}
+.main span {
+  font-family: 'Courier New', Courier, monospace;
+}
+.main footer img {
+  width: 30px;
+  margin-top: 50px;
+  padding-left: 5px;
+}
+.main footer {
+  font-size: 0.5em;
+}
+.prog_lang a {
+  text-decoration: none;
+}
+.prog_lang a:hover {
+  text-decoration: underline;
+}
