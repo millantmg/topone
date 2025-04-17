@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+  <style>
+    body {
+      background-color: black;
+      color:white;
+      font-size: 5em; 
+      text-align: center; 
+    }
+  </style>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <input id="in" type="text">
+    <button onclick="myFunc()">Test Input</button>
+    <script>
+      function myFunc(){
+        const x = document.getElementById("demo");
+        x.innerHTML = "";
+        let y = document.getElementById("in").value;
+        try {
+          if (y.trim() == "") throw "empty";
+          if (isNaN(y)) throw "not a number";
+          y = Number(y);
+          if (y < 10) throw "less";
+          if (10 == 10) throw "equal";
+          if (y > 10) throw "grater";
+        }
+        catch (err) {
+          x.innerHTML = err;
+        }
+        finally {
+          document.getElementById("demo").value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
